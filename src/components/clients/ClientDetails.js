@@ -115,7 +115,8 @@ class ClientDetails extends Component {
                     <small>
                       <a
                         href="#!"
-                        onClick={() => {
+                        onClick={e => {
+                          e.preventDefault();
                           this.setState({
                             showBalanceUpdate: !this.state.showBalanceUpdate
                           });
